@@ -30,8 +30,6 @@
 
   <!-- ============ HERO / FUNDRAISER ============ -->
   <section id="top" class="hero">
-    <div class="hero__brush hero__brush--red" aria-hidden="true"></div>
-    <div class="hero__brush hero__brush--blue" aria-hidden="true"></div>
     <div class="hero__brush hero__brush--yellow" aria-hidden="true"></div>
 
     <div class="hero__inner">
@@ -75,6 +73,75 @@
           Watch the livestream
         </a>
       </div>
+
+      <div class="hero-pay" aria-label="Ways to support">
+        <div class="hero-pay__item">
+          <span class="hero-pay__label">MTN MoMo</span>
+          <span class="hero-pay__value">1319664</span>
+          <span class="hero-pay__sub">Delphine Marie</span>
+        </div>
+        <div class="hero-pay__item">
+          <span class="hero-pay__label">Bank · RWF / USD</span>
+          <span class="hero-pay__value hero-pay__value--muted">To be confirmed</span>
+        </div>
+        <div class="hero-pay__item">
+          <span class="hero-pay__label">Contacts</span>
+          <a href="tel:+250788558800" class="hero-pay__value hero-pay__value--link">0788 558 800</a>
+          <a href="tel:+250786232551" class="hero-pay__value hero-pay__value--link">0786 232 551</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENT PREVIEW CAROUSEL ============ -->
+  <section id="event-preview" class="carousel-section">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--center">A taste of the day</p>
+      <h2 class="section__title">What "Play for Korea" will look like.</h2>
+      <p class="section__lede">
+        A glimpse of the matches, music, food and games waiting for you on 5 July 2026 —
+        and the video that started it all.
+      </p>
+
+      <div class="carousel" data-autoplay="6500" aria-label="Event preview">
+        <div class="carousel__track">
+          <!-- Slide 1: Event video — replace src with the actual video file once available -->
+          <div class="carousel__slide carousel__slide--video">
+            <video controls preload="metadata" poster="assets/fundraiser-ticket.jpeg">
+              <source src="assets/event-video.mp4" type="video/mp4" />
+              Your browser doesn't support embedded video.
+            </video>
+            <p class="carousel__caption">Watch our invitation</p>
+          </div>
+
+          <!-- Slide 2: The official ticket / poster -->
+          <div class="carousel__slide carousel__slide--image">
+            <img src="assets/fundraiser-ticket.jpeg" alt="Play for Korea event poster" />
+          </div>
+
+          <!-- Slides 3–6: branded placeholders. Replace each <div> with an <img> of the real photo. -->
+          <div class="carousel__slide placeholder placeholder--red">
+            <span class="placeholder__icon" aria-hidden="true">⚽</span>
+            <p>Exciting matches</p>
+          </div>
+          <div class="carousel__slide placeholder placeholder--blue">
+            <span class="placeholder__icon" aria-hidden="true">🎶</span>
+            <p>International music &amp; show</p>
+          </div>
+          <div class="carousel__slide placeholder placeholder--yellow">
+            <span class="placeholder__icon" aria-hidden="true">🎲</span>
+            <p>Games for children &amp; lottery</p>
+          </div>
+          <div class="carousel__slide placeholder placeholder--dark">
+            <span class="placeholder__icon" aria-hidden="true">🍽️</span>
+            <p>Tasty food &amp; drinks</p>
+          </div>
+        </div>
+
+        <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous slide">‹</button>
+        <button class="carousel__arrow carousel__arrow--next" aria-label="Next slide">›</button>
+        <div class="carousel__dots" role="tablist" aria-label="Slide selector"></div>
+      </div>
     </div>
   </section>
 
@@ -93,6 +160,48 @@
         For the Rwandan youth of the Neocatechumenal Way, each WYD is a step on the road —
         a chance to discover that the Risen Christ is alive, and that He is calling.
       </p>
+    </div>
+  </section>
+
+  <!-- ============ YOUTH GALLERY CAROUSEL ============ -->
+  <section id="youth-gallery" class="carousel-section carousel-section--soft">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--center">Our youth at WYD</p>
+      <h2 class="section__title">Faces of the road we have walked.</h2>
+      <p class="section__lede">
+        Rwandan youth of the Neocatechumenal Way at past World Youth Days.
+        Walking, singing, praying — answering the call.
+      </p>
+
+      <div class="carousel" data-autoplay="5000" aria-label="Rwandan youth at WYD">
+        <div class="carousel__track">
+          <!-- Replace each placeholder div below with: <div class="carousel__slide carousel__slide--image"><img src="assets/youth/your-photo.jpg" alt="..." /></div> -->
+          <div class="carousel__slide placeholder placeholder--blue">
+            <span class="placeholder__icon" aria-hidden="true">🇷🇼</span>
+            <p>Rwanda · Madrid 2011</p>
+          </div>
+          <div class="carousel__slide placeholder placeholder--red">
+            <span class="placeholder__icon" aria-hidden="true">✝</span>
+            <p>Rwanda · Rio 2013</p>
+          </div>
+          <div class="carousel__slide placeholder placeholder--yellow">
+            <span class="placeholder__icon" aria-hidden="true">⛪</span>
+            <p>Rwanda · Lisbon 2023</p>
+          </div>
+          <div class="carousel__slide placeholder placeholder--dark">
+            <span class="placeholder__icon" aria-hidden="true">🕊️</span>
+            <p>On the road together</p>
+          </div>
+          <div class="carousel__slide placeholder placeholder--red">
+            <span class="placeholder__icon" aria-hidden="true">🎵</span>
+            <p>Singing on pilgrimage</p>
+          </div>
+        </div>
+
+        <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous slide">‹</button>
+        <button class="carousel__arrow carousel__arrow--next" aria-label="Next slide">›</button>
+        <div class="carousel__dots" role="tablist" aria-label="Slide selector"></div>
+      </div>
     </div>
   </section>
 
@@ -153,11 +262,11 @@
   <!-- ============ SEOUL 2027 IDENTITY ============ -->
   <section id="seoul" class="seoul">
     <div class="section__inner">
-      <p class="eyebrow eyebrow--center eyebrow--light">WYD Seoul 2027</p>
-      <h2 class="section__title section__title--light">
+      <p class="eyebrow eyebrow--center">WYD Seoul 2027</p>
+      <h2 class="section__title">
         Youth from Seoul and around the world,<br/>united in the Holy Spirit.
       </h2>
-      <p class="section__lede section__lede--light">
+      <p class="section__lede">
         The logo of WYD Seoul 2027 writes "Seoul" in traditional Korean brush calligraphy,
         gracefully holding within its strokes the Latin letters <strong>W</strong>,
         <strong>Y</strong>, <strong>D</strong> — East and West meeting in one symbol of hope.
@@ -207,7 +316,8 @@
 
   <!-- ============ SUPPORT / CTA REPEAT ============ -->
   <section id="support" class="support">
-    <div class="section__inner support__inner">
+    <div class="section__inner">
+    <div class="support__inner">
       <div class="support__text">
         <img src="assets/neocat-logo.png" alt="Neocatechumenal Way" class="support__seal" />
         <p class="eyebrow">Help us go</p>
@@ -230,6 +340,30 @@
       <figure class="support__ticket">
         <img src="assets/fundraiser-ticket.jpeg" alt="Play for Korea fundraising event poster" />
       </figure>
+    </div>
+
+    <div class="pay">
+      <p class="pay__lede">
+        Every contribution — large or small — is a step our youth take towards Seoul.
+        When you walk with them, you walk with Christ to meet the youth of the world.
+        <em>Asante &middot; Murakoze &middot; Thank you.</em>
+      </p>
+      <ul class="pay__methods">
+        <li class="pay__method pay__method--momo">
+          <span class="pay__label">MTN MoMo</span>
+          <span class="pay__value">1319664</span>
+          <span class="pay__holder">Delphine Marie</span>
+        </li>
+        <li class="pay__method pay__method--bank">
+          <span class="pay__label">Bank account · RWF</span>
+          <span class="pay__value pay__value--muted">To be confirmed</span>
+        </li>
+        <li class="pay__method pay__method--bank">
+          <span class="pay__label">Bank account · USD</span>
+          <span class="pay__value pay__value--muted">To be confirmed</span>
+        </li>
+      </ul>
+    </div>
     </div>
   </section>
 
@@ -276,6 +410,12 @@
         Rwandan youth · Neocatechumenal Way<br/>
         Walking together towards Seoul 2027
       </p>
+      <div class="footer__contacts" aria-label="Contacts">
+        <span class="footer__contacts-label">Contacts</span>
+        <a href="tel:+250788558800">0788 558 800</a>
+        <span class="footer__contacts-sep" aria-hidden="true">|</span>
+        <a href="tel:+250786232551">0786 232 551</a>
+      </div>
       <p class="footer__verse">
         <em>"Take courage; I have conquered the world."</em> — Jn 16:33
       </p>
